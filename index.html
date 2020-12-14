@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>web 1.1</title>
+
+
+	<style>
+     *{
+     	margin: 0;
+     	padding: 0;
+     	box-sizing: border-box;
+     }
+
+     header{
+     	width: 100%;
+     	height: 100vh;
+     	background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+     }
+
+     .navsection{
+     	width: 100%;
+     	height: 20vh;
+     	justify-content: space-around;
+     	align-items: center;
+     	display: flex;
+     	background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+     }
+
+     .logo{
+     	width: 30%;
+     	color: #fff;
+     	background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+     	text-align: center;
+     }
+
+     .logo h2{
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          animation: logoani 2s linear infinite;
+          animation-direction: alternate;
+     }
+
+
+     @keyframes logoani{
+     	from{padding-left: 40px;}
+     	to{padding-right:40px ;}
+     }
+
+     nav{
+     	width: 40%;
+     	display: flex;
+     	justify-content: space-around;
+     }
+
+     nav a{
+     	text-decoration: none;
+     	text-transform: uppercase;
+     	color: #000;
+     	font-weight: 900;
+     	font-size: 17px;
+     	position: relative;
+     }
+
+     nav a:first-child{
+     	color: #4458dc;
+     }
+
+     nav a::before{
+     	content: "";
+     	position: absolute;
+     	top: 110%;
+     	left: 0;
+     	width: 0;
+     	height: 2px;
+     	border-bottom: 2px solid black;
+     	transition: all .3s;
+
+     }
+
+      nav a:hover::before{
+      	width: 100%;
+      }
+
+      main{
+      	height: 80%;
+      	display: flex;
+      	justify-content: space-around;
+      	align-items: center;
+      }
+
+      .right-side{
+       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+       background-color: #e8fbff;
+      }
+
+      .right-side img{
+         max-width: 600px;
+         height: auto;
+      }
+
+      .left-side{
+      	color: black;
+      	text-transform: uppercase;
+      }
+
+      .left-side h3{
+      	font-size: 40px;
+      	margin-bottom: 20px;
+      	position: relative;
+      }
+
+      .left-side h3::after{
+      	 content: "";
+      	 width: 450px;
+      	 height: 3px;
+      	 position: absolute;
+      	 top: 43%;
+      	 left: 23.4%;
+      	 background: #000;
+      }
+
+      .left-side h1{
+         margin-top: 20px;
+         font-size: 70px;
+         margin-bottom: 20px;
+      }
+
+      .left-side h2{
+         margin-top: 20px;
+         font-weight: 500;
+         word-spacing: 4px;
+         margin-bottom: 20px;
+      }
+
+      .left-side .btn1{
+        color: #fff;
+        border: double 2px transparent;
+        box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+        background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+      }
+
+     .left-side .btn2{
+        color: #222;
+        background-color: #fff;
+        border: 2px solid #4458dc;
+      }
+
+      .left-side .btn1, .btn2{
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: center;
+        padding: 12px 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 50px;
+      }
+
+      .left-side .btn1:hover{
+      	color: #222;
+        background-color: #fff;
+        border: 2px solid #4458dc;
+        background-image: none;
+      }
+
+      .left-side .btn2:hover{
+      	color: #fff;
+        border: double 2px transparent;
+        box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+        background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+      }
+
+
+		
+	</style>
+</head>
+<body>
+  <header>
+
+
+  	<section class="navsection">
+  		<div class="logo">
+  			<h2>Nagaraj SP</h2>
+  		</div>
+  		<nav>
+  			<a href="#">Home</a>
+  			<a href="#">Subjects</a>
+  			<a href="#">Projects</a>
+  			<a href="#">Sports</a>
+  			<a href="#">Contact</a>
+  		</nav>
+  	</section>
+  	<main>
+  		<div class="left-side">
+  			<h3>Hello,</h3>
+  			<h1>I am Nagaraj SP</h1>
+  			<h2>Web developer & 2020 graduate</h2>
+  			<a href="#" class="btn1">Hire me</a>
+  			<a href="#" class="btn2">Contact me</a>
+  		</div>
+  		<div class="right-side">
+  			<img src="img/comp1.jpg">
+  		</div>
+  	</main>
+
+
+  </header>	
+</body>
+</html>
